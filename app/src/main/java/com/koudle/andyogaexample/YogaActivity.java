@@ -44,7 +44,8 @@ public class YogaActivity extends AppCompatActivity {
 
         YogaNode text = new YogaNode();
         text.setWidth(200);
-        text.setHeight(25);
+        text.setHeight(300);
+        text.setAlignContent(YogaAlign.CENTER);
 
         YogaNode image = new YogaNode();
         image.setWidth(50);
@@ -63,6 +64,8 @@ public class YogaActivity extends AppCompatActivity {
                 .append(" layout Y:").append(text.getLayoutY()).append("\n")
                 .append("image,layout X:").append(image.getLayoutX())
                 .append(" layout Y:").append(image.getLayoutY());
+
+        root.setWrap();
 
         mYogaText.setText(buffer.toString());
 
