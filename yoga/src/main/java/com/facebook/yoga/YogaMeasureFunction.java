@@ -18,9 +18,9 @@ public interface YogaMeasureFunction {
    */
   @DoNotStrip
   long measure(
-          YogaNodeAPI node,
-          float width,
-          YogaMeasureMode widthMode,
-          float height,
-          YogaMeasureMode heightMode);
+      YogaNodeAPI node,
+      float width,
+      YogaMeasureMode widthMode,
+      float height,
+      YogaMeasureMode heightMode);
 }
